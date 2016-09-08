@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>simple tip calculator</title>
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+  <span>Total bill amount :</span>
+  $ <input type="text" id="bill" class="amount-field"> <br>
+  <span>Tip Percentage:</span>
+  <input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value, 'bill')" class="range-style">
+  <span id="slideval">0%</span>
+  <h3>Tip to leave = 
+    <span id="tipamount" class="tip-amount">$0.00</span>
+  </h3>                                           
+</div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
